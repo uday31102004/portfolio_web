@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+  }
+  
+  #skills {
+    padding: 90px 0 20px;
+    background-color: #f6f6f6;
+  }
+  
+  #skills .container {
+    width: 85%;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  
+  #skills .text-center {
+    margin-bottom: 40px;
+  }
+  
+  #skills h2 {
+    font-size: 4rem;  /* Increased font size */
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+  }
+  
+  #skills .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+  
+  #skills .glass {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    padding: 25px; /* Increased padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #skills .glass:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #skills h3 {
+    font-size: 2rem;  /* Increased font size */
+    font-weight: 600;
+    margin-bottom: 20px; /* Increased margin */
+    color: #333;
+  }
+  
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #skills ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;  /* Increased font size */
+    color: #555;
+    margin-bottom: 15px; /* Increased margin */
+  }
+  
+  #skills ul li span {
+    display: inline-block;
+    width: 10px;  /* Increased size of circle */
+    height: 10px;  /* Increased size of circle */
+    margin-right: 15px;  /* Increased margin */
+    border-radius: 50%;
+    background-color: #7ca982;
+  }
+  
+  @media (max-width: 1024px) {
+    #skills .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #skills .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
+  
+    #skills h2 {
+      font-size: 3rem;  /* Increased font size */
+    }
+  
+    #skills h3 {
+      font-size: 1.5rem;  /* Increased font size */
+    }
+  
+    #skills ul li {
+      font-size: 1.1rem;  /* Increased font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #skills {
+      padding: 60px 0 20px;
+    }
+  
+    #skills h2 {
+      font-size: 2.5rem;  /* Increased font size */
+    }
+  
+    #skills h3 {
+      font-size: 1.3rem;  /* Increased font size */
+    }
+  }
+  
